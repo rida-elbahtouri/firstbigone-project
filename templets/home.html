@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1> words counter</h1>
+    <form  action="{% url 'cont' %}" >
+      <textarea name="fulltext" rows="12" cols="80"></textarea>
+      <input type="submit"  value="count">
+    </form>
+    <a href="{% url 'about' %}">about us</a>
+</body>
+</html>

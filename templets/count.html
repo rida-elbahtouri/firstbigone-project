@@ -1,0 +1,14 @@
+<h1>your text have {{count}} words</h1>
+<br>
+<a href="{% url 'home' %}">try again</a>
+<a href="{% url 'about' %}">about us</a>
+<h1>your text is</h1>
+<br>
+
+<h3>{{fulltext}}</h3>
+{% for word,counttot in worddic %}
+{{word}}-{{counttot}}
+<br>
+
+<br>
+{% endfor %}
